@@ -11,7 +11,7 @@ import (
 )
 
 func TestModule1CheckEnvGOOS(t *testing.T) {
-	found := OpenFileAndFindNthString("module1.txt", 0, "GOOS")
+	found := OpenFileAndFindNthString("module1.txt", 0, "set GOOS")
 
 	if !found {
 		t.Errorf("'go env' does not work as expected")
